@@ -86,13 +86,19 @@ public class ServiceManager implements RecordListener<Service> {
      */
     private final Map<String, Map<String, Service>> serviceMap = new ConcurrentHashMap<>();
 
-    // LinkedBlockingDeque 场景 + 用法
+    /**
+     * LinkedBlockingDeque 场景 + 用法.
+     */
     private final LinkedBlockingDeque<ServiceKey> toBeUpdatedServicesQueue = new LinkedBlockingDeque<>(1024 * 1024);
 
-    // 自定义同步器
+    /**
+     * 自定义同步器.
+     */
     private final Synchronizer synchronizer = new ServiceStatusSynchronizer();
 
-    // 重入锁
+    /**
+     * 重入锁.
+     */
     private final Lock lock = new ReentrantLock();
 
     @Resource(name = "consistencyDelegate")

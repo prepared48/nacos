@@ -272,7 +272,7 @@
                         <ruleset>rulesets/java/ali-other.xml</ruleset>
                         <ruleset>rulesets/java/ali-set.xml</ruleset>
                     </rulesets>
-                    <printFailingErrors>true</printFailingErrors>
+                    <printFailingErrors>false</printFailingErrors>
                     <excludes>
                         <exclude>**/consistency/entity/*.java</exclude>
                         <exclude>**/istio/model/mcp/*.java</exclude>

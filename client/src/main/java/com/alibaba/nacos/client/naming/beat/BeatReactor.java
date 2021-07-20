@@ -53,7 +53,7 @@ public class BeatReactor implements Closeable {
     private boolean lightBeatEnabled = false;
 
     /**
-     * 存储的是什么信息？服务列表信息？心跳信息？服务列表信息==心跳信息？
+     * 存储的是什么信息？服务列表信息？心跳信息？服务列表信息==心跳信息？.
      */
     public final Map<String, BeatInfo> dom2Beat = new ConcurrentHashMap<String, BeatInfo>();
 
